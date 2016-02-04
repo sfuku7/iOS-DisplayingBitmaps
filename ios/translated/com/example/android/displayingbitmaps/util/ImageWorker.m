@@ -149,8 +149,8 @@ withComExampleAndroidDisplayingbitmapsUtilAbstractImageView:(id<ComExampleAndroi
   JreStrongAssign(&mLoadingBitmap_, bitmap);
 }
 
-- (void)setLoadingImageWithInt:(jint)resId {
-  JreStrongAssign(&mLoadingBitmap_, [((id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmapFactory>) nil_chk(mBitmapFactory_)) decodeResourceWithInt:resId]);
+- (void)setLoadingImageWithNSString:(NSString *)resId {
+  JreStrongAssign(&mLoadingBitmap_, [((id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmapFactory>) nil_chk(mBitmapFactory_)) decodeResourceWithNSString:resId]);
 }
 
 - (void)addImageCacheWithComExampleAndroidDisplayingbitmapsUtilImageCache_ObjectHolderFactory:(id<ComExampleAndroidDisplayingbitmapsUtilImageCache_ObjectHolderFactory>)objectHolderFactory
@@ -269,7 +269,7 @@ withComExampleAndroidDisplayingbitmapsUtilAbstractImageView:(id<ComExampleAndroi
     { "loadImageWithId:withComExampleAndroidDisplayingbitmapsUtilAbstractImageView:withComExampleAndroidDisplayingbitmapsUtilImageWorker_OnImageLoadedListener:", "loadImage", "V", 0x1, NULL, NULL },
     { "loadImageWithId:withComExampleAndroidDisplayingbitmapsUtilAbstractImageView:", "loadImage", "V", 0x1, NULL, NULL },
     { "setLoadingImageWithComExampleAndroidDisplayingbitmapsUtilAbstractBitmap:", "setLoadingImage", "V", 0x1, NULL, NULL },
-    { "setLoadingImageWithInt:", "setLoadingImage", "V", 0x1, NULL, NULL },
+    { "setLoadingImageWithNSString:", "setLoadingImage", "V", 0x1, NULL, NULL },
     { "addImageCacheWithComExampleAndroidDisplayingbitmapsUtilImageCache_ObjectHolderFactory:withComExampleAndroidDisplayingbitmapsUtilImageCache_ImageCacheParams:", "addImageCache", "V", 0x1, NULL, NULL },
     { "addImageCacheWithComExampleAndroidDisplayingbitmapsUtilImageCache_ObjectHolderFactory:withNSString:", "addImageCache", "V", 0x1, NULL, NULL },
     { "setImageFadeInWithBoolean:", "setImageFadeIn", "V", 0x1, NULL, NULL },

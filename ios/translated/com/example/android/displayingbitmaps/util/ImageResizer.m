@@ -14,18 +14,17 @@
 #include "com/example/android/displayingbitmaps/util/ImageResizer.h"
 #include "com/example/android/displayingbitmaps/util/ImageWorker.h"
 #include "com/example/android/displayingbitmaps/util/MemoryImageCacheFactory.h"
-#include "java/lang/Integer.h"
 
 @interface ComExampleAndroidDisplayingbitmapsUtilImageResizer ()
 
-- (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)processBitmapWithInt:(jint)resId;
+- (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)processBitmapWithNSString:(NSString *)resId;
 
 @end
 
 static NSString *ComExampleAndroidDisplayingbitmapsUtilImageResizer_TAG_ = @"ImageResizer";
 J2OBJC_STATIC_FIELD_GETTER(ComExampleAndroidDisplayingbitmapsUtilImageResizer, TAG_, NSString *)
 
-__attribute__((unused)) static id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap> ComExampleAndroidDisplayingbitmapsUtilImageResizer_processBitmapWithInt_(ComExampleAndroidDisplayingbitmapsUtilImageResizer *self, jint resId);
+__attribute__((unused)) static id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap> ComExampleAndroidDisplayingbitmapsUtilImageResizer_processBitmapWithNSString_(ComExampleAndroidDisplayingbitmapsUtilImageResizer *self, NSString *resId);
 
 @implementation ComExampleAndroidDisplayingbitmapsUtilImageResizer
 
@@ -60,12 +59,12 @@ __attribute__((unused)) static id<ComExampleAndroidDisplayingbitmapsUtilAbstract
   [self setImageSizeWithInt:size withInt:size];
 }
 
-- (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)processBitmapWithInt:(jint)resId {
-  return ComExampleAndroidDisplayingbitmapsUtilImageResizer_processBitmapWithInt_(self, resId);
+- (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)processBitmapWithNSString:(NSString *)resId {
+  return ComExampleAndroidDisplayingbitmapsUtilImageResizer_processBitmapWithNSString_(self, resId);
 }
 
 - (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)processBitmapWithId:(id)data {
-  return ComExampleAndroidDisplayingbitmapsUtilImageResizer_processBitmapWithInt_(self, JavaLangInteger_parseIntWithNSString_(NSString_valueOf_(data)));
+  return ComExampleAndroidDisplayingbitmapsUtilImageResizer_processBitmapWithNSString_(self, NSString_valueOf_(data));
 }
 
 + (jint)calculateInSampleSizeWithInt:(jint)width
@@ -81,7 +80,7 @@ __attribute__((unused)) static id<ComExampleAndroidDisplayingbitmapsUtilAbstract
     { "initWithComExampleAndroidDisplayingbitmapsUtilAbstractBitmapFactory:withComExampleAndroidDisplayingbitmapsUtilAbstractBitmapDrawableFactory:withComExampleAndroidDisplayingbitmapsUtilMemoryImageCacheFactory:withComExampleAndroidDisplayingbitmapsUtilDiskEnvironment:withComExampleAndroidDisplayingbitmapsUtilAsyncTask_ThreadOperation:withInt:", "ImageResizer", NULL, 0x1, NULL, NULL },
     { "setImageSizeWithInt:withInt:", "setImageSize", "V", 0x1, NULL, NULL },
     { "setImageSizeWithInt:", "setImageSize", "V", 0x1, NULL, NULL },
-    { "processBitmapWithInt:", "processBitmap", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x2, NULL, NULL },
+    { "processBitmapWithNSString:", "processBitmap", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x2, NULL, NULL },
     { "processBitmapWithId:", "processBitmap", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x4, NULL, NULL },
     { "calculateInSampleSizeWithInt:withInt:withInt:withInt:", "calculateInSampleSize", "I", 0x9, NULL, NULL },
   };
@@ -118,11 +117,11 @@ ComExampleAndroidDisplayingbitmapsUtilImageResizer *new_ComExampleAndroidDisplay
   return self;
 }
 
-id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap> ComExampleAndroidDisplayingbitmapsUtilImageResizer_processBitmapWithInt_(ComExampleAndroidDisplayingbitmapsUtilImageResizer *self, jint resId) {
+id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap> ComExampleAndroidDisplayingbitmapsUtilImageResizer_processBitmapWithNSString_(ComExampleAndroidDisplayingbitmapsUtilImageResizer *self, NSString *resId) {
   {
-    ComExampleAndroidCommonLoggerLog_dWithNSString_withNSString_(ComExampleAndroidDisplayingbitmapsUtilImageResizer_TAG_, JreStrcat("$I", @"processBitmap - ", resId));
+    ComExampleAndroidCommonLoggerLog_dWithNSString_withNSString_(ComExampleAndroidDisplayingbitmapsUtilImageResizer_TAG_, JreStrcat("$$", @"processBitmap - ", resId));
   }
-  return [((id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmapFactory>) nil_chk(self->mBitmapFactory_)) decodeSampledBitmapFromResourceWithInt:resId withInt:self->mImageWidth_ withInt:self->mImageHeight_ withComExampleAndroidDisplayingbitmapsUtilImageCache:[self getImageCache]];
+  return [((id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmapFactory>) nil_chk(self->mBitmapFactory_)) decodeSampledBitmapFromResourceWithNSString:resId withInt:self->mImageWidth_ withInt:self->mImageHeight_ withComExampleAndroidDisplayingbitmapsUtilImageCache:[self getImageCache]];
 }
 
 jint ComExampleAndroidDisplayingbitmapsUtilImageResizer_calculateInSampleSizeWithInt_withInt_withInt_withInt_(jint width, jint height, jint reqWidth, jint reqHeight) {

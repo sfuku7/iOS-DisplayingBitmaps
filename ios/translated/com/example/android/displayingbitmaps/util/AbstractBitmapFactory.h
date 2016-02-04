@@ -14,12 +14,12 @@
 
 @protocol ComExampleAndroidDisplayingbitmapsUtilAbstractBitmapFactory < NSObject, JavaObject >
 
-- (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)decodeResourceWithInt:(jint)resId;
+- (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)decodeResourceWithNSString:(NSString *)resId;
 
-- (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)decodeSampledBitmapFromResourceWithInt:(jint)resId
-                                                                                           withInt:(jint)reqWidth
-                                                                                           withInt:(jint)reqHeight
-                                              withComExampleAndroidDisplayingbitmapsUtilImageCache:(ComExampleAndroidDisplayingbitmapsUtilImageCache *)cache;
+- (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)decodeSampledBitmapFromResourceWithNSString:(NSString *)resId
+                                                                                                withInt:(jint)reqWidth
+                                                                                                withInt:(jint)reqHeight
+                                                   withComExampleAndroidDisplayingbitmapsUtilImageCache:(ComExampleAndroidDisplayingbitmapsUtilImageCache *)cache;
 
 - (id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)decodeSampledBitmapFromFileWithNSString:(NSString *)filename
                                                                                             withInt:(jint)reqWidth

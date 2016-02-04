@@ -17,8 +17,8 @@
 
 + (const J2ObjcClassInfo *)__metadata {
   static const J2ObjcMethodInfo methods[] = {
-    { "decodeResourceWithInt:", "decodeResource", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x401, NULL, NULL },
-    { "decodeSampledBitmapFromResourceWithInt:withInt:withInt:withComExampleAndroidDisplayingbitmapsUtilImageCache:", "decodeSampledBitmapFromResource", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x401, NULL, NULL },
+    { "decodeResourceWithNSString:", "decodeResource", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x401, NULL, NULL },
+    { "decodeSampledBitmapFromResourceWithNSString:withInt:withInt:withComExampleAndroidDisplayingbitmapsUtilImageCache:", "decodeSampledBitmapFromResource", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x401, NULL, NULL },
     { "decodeSampledBitmapFromFileWithNSString:withInt:withInt:withComExampleAndroidDisplayingbitmapsUtilImageCache:", "decodeSampledBitmapFromFile", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x401, NULL, NULL },
     { "decodeSampledBitmapFromDescriptorWithJavaIoFileDescriptor:withInt:withInt:withComExampleAndroidDisplayingbitmapsUtilImageCache:", "decodeSampledBitmapFromDescriptor", "Lcom.example.android.displayingbitmaps.util.AbstractBitmap;", 0x401, NULL, NULL },
   };

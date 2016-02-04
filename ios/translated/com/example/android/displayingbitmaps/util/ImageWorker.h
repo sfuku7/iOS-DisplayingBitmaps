@@ -62,7 +62,7 @@ withComExampleAndroidDisplayingbitmapsUtilImageWorker_OnImageLoadedListener:(id<
 
 - (void)setLoadingImageWithComExampleAndroidDisplayingbitmapsUtilAbstractBitmap:(id<ComExampleAndroidDisplayingbitmapsUtilAbstractBitmap>)bitmap;
 
-- (void)setLoadingImageWithInt:(jint)resId;
+- (void)setLoadingImageWithNSString:(NSString *)resId;
 
 - (void)setPauseWorkWithBoolean:(jboolean)pauseWork;
 
