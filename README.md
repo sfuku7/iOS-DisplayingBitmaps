@@ -31,9 +31,7 @@ And this project links JRE runtime which is built with J2ObjC, see https://githu
 
 ## How to translate with J2ObjC
 
-Translated codes are already included in this project.
-
-But you can try translation from Java to Objective-C with below steps.
+Translated codes are already included in this project. But you can try translation from Java to Objective-C with below steps.
 
 ```
 $ cd android
