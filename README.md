@@ -20,14 +20,14 @@ And this project links JRE runtime which is built with J2ObjC, see https://githu
 
 ## Build and Run
 
-1. build and install J2ObjC, see https://github.com/google/j2objc, just do 'make dist'.
-2. open project 'ios/CollectionView.xcodeproj' with Xcode
-3. set 'j2ojc_distribution' variable.
-  1. open project 'CollectionView'
-  2. select 'Build Settings'
-  3. find 'j2ojc_distribution'
-  4. set 'j2ojc_distribution' as your J2ObjC distribution path.
-4. push the 'build and run' button of Xcode
+1. Build and install J2ObjC, see https://github.com/google/j2objc. Just do 'make dist'.
+2. Open project 'ios/CollectionView.xcodeproj' with Xcode
+3. Set 'j2ojc_distribution' variable.
+  1. Open project 'CollectionView'
+  2. Select 'Build Settings'
+  3. Find 'j2ojc_distribution'
+  4. Set 'j2ojc_distribution' as your J2ObjC distribution path.
+4. Push the 'build and run' button of Xcode
 
 ## How to translate with J2ObjC
 
