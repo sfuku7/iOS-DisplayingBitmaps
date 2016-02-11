@@ -11,7 +11,7 @@ And this project uses below projects with modifications, you can find software l
 * CollectionView-Simple
   * https://developer.apple.com/library/ios/samplecode/CollectionView-Simple/Introduction/Intro.html
 
-And this project links JRE runtime which is built with J2ObjC, see https://github.com/google/j2objc.
+And this project links JRE emulation which is built with J2ObjC, see https://github.com/google/j2objc.
 
 ## Build Requirements
 
