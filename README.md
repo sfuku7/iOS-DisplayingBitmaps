@@ -1,4 +1,4 @@
-# iOS-DisplayingBitmaps
+# iOS-J2ObjC-DisplayingBitmaps
 
 This project shows a sample to share code between Android application and iOS application with [J2ObjC] (https://github.com/google/j2objc) which is translation tool from Google.
 
